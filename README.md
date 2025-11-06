@@ -1,105 +1,24 @@
-📰 News Research Tool 📈
-
-An AI-powered News Research Tool built with Streamlit, LangChain, and OpenAI that lets users input news article URLs and ask natural language questions. The system fetches, processes, and analyzes the content, then provides concise answers with referenced sources.
-
-✨ Features
-
-🔗 Accept up to 3 news article URLs from the sidebar
-
-⚡ Automatically fetch, clean, and split news content
-
-🧠 Embeds content using OpenAI + FAISS for semantic search
-
-❓ Ask natural questions about the content
-
-✅ Get AI-generated answers with proper source citations
-
-💾 Save and reuse embeddings locally (faiss_store_openai.pkl)
-
-🛠️ Tech Stack
-
-Python 3.9+
-
-Streamlit
- – Interactive web app
-
-LangChain
- – LLM framework
-
-OpenAI API
- – GPT + embeddings
-
-FAISS
- – Vector similarity search
-
-Pickle – Persistence of FAISS index
-
-dotenv – Secure API key management
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/Hatami5/Chatbot-using-Langchain/blob/main/main.py
+<h1 align="center">📰 News Research Tool 📈</h1> <p align="center"> <b>Explore, analyze, and compare news articles using AI — interactively.</b><br> Built and maintained by <a href="https://github.com/Hatami5">Hassan Hatami</a> • AI Developer @ SageMind Tech Services </p>
+<h2> Overview</h2> <p> <b>News Research Tool</b> is an AI-powered, interactive web app that helps you explore and summarize multiple news articles effortlessly. Paste up to <b>three news URLs</b>, ask <b>natural language questions</b>, and get <b>concise answers with sources</b> — powered by <b>Streamlit</b>, <b>LangChain</b>, and <b>OpenAI</b>. </p> <blockquote>  Designed for journalists, analysts, and curious readers who want clarity — instantly. </blockquote>
+<h2> Key Features</h2> <ul> <li>🔗 <b>Multi-URL Input</b> — Analyze up to 3 news articles together.</li> <li> <b>Automated Content Processing</b> — Fetch, clean, and analyze articles instantly.</li> <li> <b>Natural Q&A</b> — Ask questions like “What’s the main idea?” or “How do these articles differ?”</li> <li> <b>AI + Vector Search</b> — Uses OpenAI embeddings + FAISS for semantic understanding.</li> <li> <b>Cited Responses</b> — Provides answers with referenced source links.</li> <li> <b>Local Reuse</b> — Saves embeddings in <code>faiss_store_openai.pkl</code> for faster queries.</li> </ul>
+<h2> Tech Stack</h2> <table> <tr><th>Tool / Framework</th><th>Purpose</th></tr> <tr><td><b>Python 3.9+</b></td><td>Core programming language</td></tr> <tr><td><b>Streamlit</b></td><td>Interactive UI for live exploration</td></tr> <tr><td><b>LangChain</b></td><td>LLM orchestration and chaining</td></tr> <tr><td><b>OpenAI API</b></td><td>GPT models + text embeddings</td></tr> <tr><td><b>FAISS</b></td><td>Vector similarity search</td></tr> <tr><td><b>Pickle</b></td><td>Persistent local data storage</td></tr> <tr><td><b>dotenv</b></td><td>Secure API key management</td></tr> </table>
+<h2> Setup Instructions</h2> <h3>1️⃣ Clone the Repository</h3>
+git clone https://github.com/Hatami5/Chatbot-using-Langchain.git
 cd news-research-tool
-
-
-Install dependencies:
-
+<h3>2️⃣ Install Dependencies</h3>
 pip install -r requirements.txt
 
+<h3>3️⃣ Add Your OpenAI API Key</h3>
 
-Add your OpenAI API key in a .env file:
+Create a <code>.env</code> file in the project root:
 
 OPENAI_API_KEY=your_openai_api_key_here
 
-
-Run the app:
-
+<h3>4️⃣ Run the App</h3>
 streamlit run app.py
 
-🚀 Usage
-
-Open the app (http://localhost:8501).
-
-Enter up to 3 news article URLs in the sidebar.
-
-Click Process URLs to load and embed content.
-
-Type your question in the input box.
-
-Get an AI-powered answer + sources.
-
-📊 Example
-
-Question:
-
-What is the main takeaway from these articles?
-
-Answer:
-
-The articles highlight the global impact of rising energy prices and inflation trends.
-
-Sources:
-
-https://example-news1.com/...
-
-https://example-news2.com/...
-
-🔮 Future Improvements
-
-Expand to handle more than 3 URLs
-
-Add multi-lingual support
-
-Enable real-time scraping for live news
-
-Deploy on Streamlit Cloud / HuggingFace Spaces
-
-👨‍💻 Author
-
-Developer name Hassan Hatami
-
-AI Developer | Data Scientist | Web Scraper | NLP Engineer
-
-⚡ If you like this project, don’t forget to ⭐ star the repo and contribute!
+<h2> How to Use</h2> <ol> <li>Open <a href="http://localhost:8501">http://localhost:8501</a>.</li> <li>Enter up to <b>3 news URLs</b> in the sidebar.</li> <li>Click <b>Process URLs</b> to load and embed the content.</li> <li>Ask any <b>natural language question</b> about the articles.</li> <li>Get <b>AI-powered insights</b> with <b>linked sources</b>.</li> </ol>
+<h2> Example Interaction</h2> <p><b>Question:</b><br> <i>What’s the main takeaway from these articles?</i></p> <p><b>Answer:</b><br> The articles highlight the global impact of rising energy prices and inflation trends.</p> <p><b>Sources:</b></p> <ul> <li><a href="https://example-news1.com">https://example-news1.com</a></li> <li><a href="https://example-news2.com">https://example-news2.com</a></li> </ul>
+<h2> Future Enhancements</h2> <ul> <li> Support more than 3 URLs</li> <li> Multi-language news support</li> <li> Real-time live news updates</li> <li> Deploy on Streamlit Cloud / HuggingFace Spaces</li> </ul>
+<h2 align="center"> Author</h2> <p align="center"> <b>Hassan Hatami</b><br> AI Developer | Data Scientist | Web Scraper | NLP Engineer<br> <a href="https://github.com/Hatami5">GitHub</a> • <a href="https://www.linkedin.com/in/hassan-hatami">LinkedIn</a> </p>
+<p align="center"> ⭐ <b>If you like this project, don’t forget to star the repo and share it!</b> ⭐ </p>
